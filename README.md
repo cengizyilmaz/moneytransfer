@@ -1,9 +1,9 @@
 # Money Transfer REST API
 
 ## Introduction
-Money transfer REST API between Customers Account. The REST API support the following action
-1- Customer: Create, Modify, Delete, List
-2- Account: Create, Modify, Delete, List
+Money transfer REST API between Customers Account. The REST API support the following action <br />
+1- Customer: Create, Modify, Delete, List <br />
+2- Account: Create, Modify, Delete, List <br />
 3- Transaction: Create, List
 
 ## Build
