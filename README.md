@@ -26,23 +26,50 @@ The customer object is used to define the person who have accounts. One Customer
 The Account object has the balance value and unique identifier. The money transfer is done between account. The account identifier should be known.  The Account has to be currency. "GBP","USD","EUR" and "JPY" is supported currency symbol.
 Transaction object has amount value and the amount of this value is removed from sender balance and added to reciever account according to Currency. The currency conversion is done during the transaction.
 
+## Customer
 When the program is executed, the rest api is exposed according to port defined..
 ### Customer Creation
 In order to transfer money, the first step is to create a customer.
 http://localhost:{port}/api/customer with POST method is used to customer creation. The body needs to supply according to Customer object model in JSON Format.
 The resulted customer object is return if it is successed in 201 ok message. 
-## Customer
+![image](https://user-images.githubusercontent.com/3469219/55922044-2c0c2d00-5c08-11e9-9dc3-f5283e6f5e03.png)
+
 ### Customer Modification
 The customer informations can be modified through this interface.
-http://localhost:{port}/api/customer with PUT method is used to customer creation. The body needs to supply according to Customer object model in JSON Format.
+http://localhost:{port}/api/customer with PUT method is used to customer modification. The body needs to supply according to Customer object model in JSON Format.
 The resulted customer object is return if it is successed in 200 ok message. 
 
 ### Customer Deletion
 The customer  can be deleted through this interface.
-http://localhost:{port}/api/customer/{customerId} with Delete method is used to customer deletion. 
+http://localhost:{port}/api/customer/{customerId} with DELETE method is used to customer deletion. 
 The resulted customer object is return if it is successed in 200 ok message. 
 
 ### Customer List
 The List of customers  can be viewed through this interface.
-http://localhost:{port}/api/customer with Delete method is used to list the customers. 
+http://localhost:{port}/api/customer with GET method is used to list the customers. 
 The list of customer object is return if it is successed in 200 ok message. 
+
+## Account
+### Account Creation
+After the customer created, the account could be created. 
+http://localhost:{port}/api/account/{customerId} with POST method is used to account creation. The body needs to supply according to Account object model in JSON Format.
+The resulted account object is return if it is successed in 201 ok message. 
+![image](https://user-images.githubusercontent.com/3469219/55922155-a341c100-5c08-11e9-92a6-418c83c41365.png)
+
+### Account Modification
+The account informations can be modified through this interface.
+http://localhost:{port}/api/account with PUT method is used to account modification. The body needs to supply according to Account object model in JSON Format.
+The resulted account object is return if it is successed in 200 ok message. 
+
+### Account Deletion
+The Account  can be deleted through this interface.
+http://localhost:{port}/api/account/{accountId} with DELETE method is used to accoint deletion. 
+The resulted account object is return if it is successed in 200 ok message. 
+
+### Account List
+The List of account  can be viewed through this interface.
+http://localhost:{port}/api/customer with GET method is used to list the accounts. 
+The list of account object is return if it is successed in 200 ok message. 
+
+![image](https://user-images.githubusercontent.com/3469219/55922290-32e76f80-5c09-11e9-82e1-3da71f08b350.png)
+
