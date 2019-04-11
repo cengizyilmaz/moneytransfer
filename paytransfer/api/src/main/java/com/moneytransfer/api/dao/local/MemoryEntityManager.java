@@ -7,7 +7,7 @@ import java.util.concurrent.ConcurrentHashMap;
 import com.moneytransfer.api.dao.model.ApiModel;
 
 /**
- * @author C00720849
+ * @author Cengiz YILMAZ
  *
  * @param <S>
  * @param <R>
