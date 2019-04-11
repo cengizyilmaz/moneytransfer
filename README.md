@@ -73,3 +73,15 @@ The list of account object is return if it is successed in 200 ok message.
 
 ![image](https://user-images.githubusercontent.com/3469219/55922290-32e76f80-5c09-11e9-82e1-3da71f08b350.png)
 
+## Transaction
+### Money Transfer
+http://localhost:{port}/api/transaction/{fromAccountId}/{toAccountId} with POST method is used to transfer money from one account to another account. The body needs to supply according to Transaction object model in JSON Format.
+The resulted account object is return if it is successed in 201 ok message. 
+
+![image](https://user-images.githubusercontent.com/3469219/55922518-30394a00-5c0a-11e9-8a78-2f9049aadb79.png)
+
+
+### Money Transfer List
+http://localhost:{port}/api/transaction with GET method is used to list the transfer money operations from one account to another account.
+The resulted account object is return if it is successed in 200 ok message.
+
